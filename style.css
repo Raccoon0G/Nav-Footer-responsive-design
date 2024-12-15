@@ -94,9 +94,6 @@ p {
     transition: color 0.3s ease;
 }
 
-.wrapper-top-right a:hover {
-    color: red; /* Amarillo dorado al pasar el mouse */
-}
 
 .wrapper-main {
     margin: 30px;
@@ -294,11 +291,6 @@ p {
         transition: color 0.3s ease;
     }
     
-    .wrapper-top-right a:hover {
-        color: #F5A623;
-    }
-
-   
     .wrapper-main {
         display: flex; /* Activa Flexbox */
         flex-direction: row;
