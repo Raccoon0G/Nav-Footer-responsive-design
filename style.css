@@ -5,6 +5,8 @@ html {
 }
 
 body {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding-top: 90px; /* Añade espacio para el nav fijo */
     font-style: normal;
     font-family: "DM Sans", serif;
     color: black;
@@ -46,6 +48,11 @@ p {
 
 .nav{
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(8, 7, 6,0.94); /* Fondo sólido oscuro */
+    margin: 20px;
 }
 
 .wrapper-top{
@@ -57,9 +64,9 @@ p {
 
 .wrapper-top-left img {
     margin-top: 10px ;
-    max-width: 250px; /* Ajusta el ancho máximo de la imagen */
-    max-height: 250px; /* Ajusta la altura máxima de la imagen */
-    display: block; /* Elimina cualquier espacio en línea adicional */
+    max-width: 120px; /* Ajusta el ancho máximo de la imagen */
+    max-height: auto; /* Ajusta la altura máxima de la imagen */
+    
 }
 
 .wrapper-top-right{
@@ -73,16 +80,21 @@ p {
 .wrapper-top-right ul li {
    list-style: none;/* Elimina las viñetas de la lista */
    font-size: 1rem; /* Ajusta el tamaño de la fuente */
-   color: #333; /* Color del texto */
    cursor: pointer; /* Cambia el cursor al pasar el mouse */
    text-align: center; /* Alinea el texto a la derecha */
    align-items: center;
 }
 .wrapper-top-right a{
     text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Asegura que use el color del texto padre */
+    color: #FFFFFF; /* Texto blanco */
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
+.wrapper-top-right a:hover {
+    color: red; /* Amarillo dorado al pasar el mouse */
+}
 
 .wrapper-main {
     margin: 30px;
@@ -140,7 +152,7 @@ p {
     position: absolute; /* Posiciona el iframe dentro del contenedor */
     border-radius: 20px;
     width: 100%; /* Ajusta el ancho al contenedor */
-    height:60%; /* Ajusta la altura al contenedor */
+    height:50%; /* Ajusta la altura al contenedor */
 }
 
 .wrapper-image {
@@ -260,6 +272,15 @@ p {
         display: flex; /* Activa Flexbox */
         align-items: center; /* Alinea las columnas al final (opcional) */
         gap: 5px; /* Agrega espacio entre los elementos */
+    }
+    .wrapper-top-right ul {
+        display: flex;
+        margin-right: 20px; /* Espacio del contenedor hacia el borde derecho */
+        gap: 15px; /* Espaciado reducido en pantallas pequeñas */
+    }
+
+    .wrapper-top-left img {
+        width: 150px; /* Reduce el logo en pantallas pequeñas */
     }
 
    
