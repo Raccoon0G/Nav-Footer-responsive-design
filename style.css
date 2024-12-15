@@ -124,6 +124,22 @@ p {
 }
 
 
+.responsive-iframe {
+    display: flex;
+    position: relative; /* Establece un contenedor relativo */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
+    height: 0; /* Altura inicial en 0 */
+    overflow: hidden; /* Oculta el contenido desbordado */
+}
+
+.responsive-iframe iframe {
+    position: absolute; /* Posiciona el iframe dentro del contenedor */
+    border-radius: 20px;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height:60%; /* Ajusta la altura al contenedor */
+}
+
 .wrapper-image {
     display: flex; /* Activa el modelo de caja flexible */
     justify-content: center; /* Centra horizontalmente */
