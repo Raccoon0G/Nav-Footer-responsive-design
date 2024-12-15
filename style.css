@@ -152,7 +152,7 @@ p {
     position: absolute; /* Posiciona el iframe dentro del contenedor */
     border-radius: 20px;
     width: 100%; /* Ajusta el ancho al contenedor */
-    height:60%; /* Ajusta la altura al contenedor */
+    height:70%; /* Ajusta la altura al contenedor */
 }
 
 .wrapper-image {
