@@ -250,12 +250,22 @@ p {
 
 
 @media screen and (min-width: 0px){
+    .responsive-iframe {
+        display: none;
+    }
    
 }
 
 @media screen and (min-width: 480px){
-    .wrapper-text-1{
-        display: none;
+    
+    
+    
+    .responsive-iframe {
+        display: block;
+    }
+    
+    .responsive-iframe iframe {
+        height:100%; /* Ajusta la altura al contenedor */
     }
 }
 
