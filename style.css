@@ -257,9 +257,6 @@ p {
 }
 
 @media screen and (min-width: 480px){
-    
-    
-    
     .responsive-iframe {
         display: block;
     }
