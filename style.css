@@ -44,6 +44,9 @@ p {
     color: #122130;
 }
 
+.nav{
+    position: fixed;
+}
 
 .wrapper-top{
     display: flex;
