@@ -304,7 +304,7 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 24px; /* Espaciado entre text-1 y text-2 */
+        gap: 30px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
@@ -327,10 +327,12 @@ p {
     }
 
     .wrapper-text-1{
+        margin-top: 5px;
         display: block;
     }
 
     .wrapper-text-2 {
+        margin-top: 20px;
         display: block;
         
     }

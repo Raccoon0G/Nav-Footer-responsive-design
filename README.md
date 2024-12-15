@@ -146,9 +146,6 @@ p {
     transition: color 0.3s ease;
 }
 
-.wrapper-top-right a:hover {
-    color: red; /* Amarillo dorado al pasar el mouse */
-}
 
 .wrapper-main {
     margin: 30px;
@@ -346,11 +343,6 @@ p {
         transition: color 0.3s ease;
     }
     
-    .wrapper-top-right a:hover {
-        color: #F5A623;
-    }
-
-   
     .wrapper-main {
         display: flex; /* Activa Flexbox */
         flex-direction: row;
@@ -364,7 +356,7 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 24px; /* Espaciado entre text-1 y text-2 */
+        gap: 30px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
@@ -387,16 +379,18 @@ p {
     }
 
     .wrapper-text-1{
+        margin-top: 5px;
         display: block;
     }
 
     .wrapper-text-2 {
+        margin-top: 20px;
         display: block;
         
     }
 
 
-} 
+}
 ```
 
 
