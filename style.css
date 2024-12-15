@@ -46,14 +46,17 @@ p {
     color: #122130;
 }
 
-.nav{
-    justify-content: space-between;
+.nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background: rgba(8, 7, 6,0.94); /* Fondo sólido oscuro */
-    padding: 10px;
+    width: 100%; /* Asegura que no desborde */
+    background: rgba(8, 7, 6, 0.94); /* Fondo sólido */
+    padding: 10px 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
+    margin: 0; /* Elimina márgenes */
+    z-index: 1000; /* Prioridad en la visualización */
+    align-items: center;
 }
 
 .wrapper-top{
@@ -136,14 +139,14 @@ p {
     display: none;
 }
 
-
 .responsive-iframe {
     display: flex;
-    position: relative; /* Establece un contenedor relativo */
+    position: relative;/* Establece un contenedor relativo */
     width: 100%; /* Ocupa todo el ancho disponible */
-    padding-bottom: 56.25%; /* Mantiene la proporción 16:9 */
+    padding-bottom: 25%; /* Mantiene la proporción 16:9 */
     height: 0; /* Altura inicial en 0 */
     overflow: hidden; /* Oculta el contenido desbordado */
+    margin-top: 20px;
 }
 
 .responsive-iframe iframe {
@@ -163,7 +166,7 @@ p {
 }
 
 .wrapper-image img {
-    margin-top: 42px;
+    margin-top: 0;
     width: 100%; /* La imagen se ajusta al ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     max-height: 50vh; /* Opcional: límite máximo de altura */
@@ -174,7 +177,7 @@ p {
 .wrapper-text-3{
     width: 100%;
     background: rgba(151, 148, 148,20%);
-    padding: 20px;
+    padding: 5px;
     border-radius: 20px;
     text-align: justify;
     box-sizing: border-box;
@@ -229,8 +232,12 @@ p {
     color: #666; /* Texto gris */
     text-decoration: none;
 }
+.wrapper-bottom-left a{
+    text-decoration: none;
+}
 
 .wrapper-bottom-right{
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 20px; /* Espaciado entre íconos */
@@ -252,14 +259,27 @@ p {
     .responsive-iframe {
         display: none;
     }
+
+    .wrapper-column-right{
+        gap: 20px;
+    }
    
 }
 
 @media screen and (min-width: 480px){
     .responsive-iframe {
         display: block;
+        padding: auto;
+    }
+    .responsive-iframe iframe {
+        width: 100%;
+        height: 100%; 
     }
     
+    .wrapper-column-right{
+        gap: 20px;
+    }
+
 }
 
 @media screen and (min-width: 768px){
@@ -294,47 +314,60 @@ p {
     .wrapper-main {
         display: flex; /* Activa Flexbox */
         flex-direction: row;
-        justify-content: space-around; /* Espacio entre columnas izquierda y derecha */
+        justify-content: space-between; /* Espacio entre columnas izquierda y derecha */
         align-items: flex-start; /* Alinea los elementos verticalmente al inicio */
         gap: 20px; /* Espaciado uniforme entre elementos */
         padding: 20px;
+        margin: 20px ; /* Centra el contenedor */
     }
 
     /* Contenedor para la columna izquierda (text-1 y text-2) */
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 30px; /* Espaciado entre text-1 y text-2 */
+        gap: 10px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
+        margin: 0; /* Elimina márgenes */
+        padding: 20px; /* Elimina padding interno */
+        box-sizing: border-box; /* Evita el desbordamiento al incluir padding y border */
     }
 
-    
     .responsive-iframe iframe {
         display: block;
         width: 100%;
-        height: 50%; 
+        height: 100%; 
     }
 
     .wrapper-column-right {
         display: flex;
         flex-direction: column; /* Apila imagen y text-3 */
-        gap: 24px; /* Espaciado entre imagen y text-3 */
+        gap: 10px; /* Espaciado entre imagen y text-3 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna derecha */
         align-items: center; /* Centra los elementos horizontalmente */
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding interno */
+        box-sizing: border-box; /* Evita el desbordamiento al incluir padding y border */
     }
 
+    .wrapper-image img{
+        margin-top: 42px;
+    }
     .wrapper-text-1{
         margin-top: 5px;
         display: block;
     }
 
     .wrapper-text-2 {
-        margin-top: 20px;
+        margin-top: 10px;
         display: block;
         
+    }
+    .wrapper-text-2 h1{
+        font-size: 1.5rem ;
+        font-style: bold;
     }
 
 
