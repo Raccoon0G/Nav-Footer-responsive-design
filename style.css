@@ -47,12 +47,13 @@ p {
 }
 
 .nav{
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: rgba(8, 7, 6,0.94); /* Fondo sólido oscuro */
-    margin: 20px;
+    padding: 10px;
 }
 
 .wrapper-top{
@@ -73,8 +74,9 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px; /* Espaciado entre íconos */
+    gap: 30px; /* Espaciado entre íconos */
     display: none;
+    margin-right: 40px;
 }
 
 .wrapper-top-right ul li {
@@ -265,8 +267,6 @@ p {
 
 @media screen and (min-width: 768px){
 
-
-
     .wrapper-top{
         display: flex;
         justify-content: space-between;
@@ -279,12 +279,23 @@ p {
     }
     .wrapper-top-right ul {
         display: flex;
-        margin-right: 20px; /* Espacio del contenedor hacia el borde derecho */
         gap: 15px; /* Espaciado reducido en pantallas pequeñas */
     }
 
     .wrapper-top-left img {
         width: 150px; /* Reduce el logo en pantallas pequeñas */
+    }
+
+    .wrapper-top-right a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+    }
+    
+    .wrapper-top-right a:hover {
+        color: #F5A623;
     }
 
    
@@ -301,7 +312,7 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 15px; /* Espaciado entre text-1 y text-2 */
+        gap: 16px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
