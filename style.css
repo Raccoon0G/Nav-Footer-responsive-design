@@ -134,7 +134,6 @@ p {
 .wrapper-text-2{
     background: #5F4BF9;
     border-radius: 20px;
-    display: block;
     padding-left: 25px;
     padding-right: 25px; 
     display: none;
@@ -163,10 +162,11 @@ p {
     align-items: center; /* Centra verticalmente */
     width: 100%; /* La imagen ocupa el 100% del ancho disponible */
     height: auto; /* La altura se ajustará automáticamente */
-    margin: 5px; /* Espaciado alrededor del contenedor */
+    
 }
 
 .wrapper-image img {
+    margin-top: 42px;
     width: 100%; /* La imagen se ajusta al ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     max-height: 50vh; /* Opcional: límite máximo de altura */
@@ -312,7 +312,7 @@ p {
     .wrapper-column-left {
         display: flex;
         flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 16px; /* Espaciado entre text-1 y text-2 */
+        gap: 24px; /* Espaciado entre text-1 y text-2 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna izquierda */ 
         align-items: center; /* Centra los elementos horizontalmente */
@@ -328,7 +328,7 @@ p {
     .wrapper-column-right {
         display: flex;
         flex-direction: column; /* Apila imagen y text-3 */
-        gap: 5px; /* Espaciado entre imagen y text-3 */
+        gap: 24px; /* Espaciado entre imagen y text-3 */
         flex: 1; /* Ocupa un ancho proporcional */
         max-width: 50%; /* Limita el ancho máximo de la columna derecha */
         align-items: center; /* Centra los elementos horizontalmente */
@@ -340,6 +340,7 @@ p {
 
     .wrapper-text-2 {
         display: block;
+        
     }
 
 
